@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticiari ITIC Barcelona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Subscriu-te al noticiari ITIC Barcelona</h1>
+
+    <form action="tornar.html" method="get">
+      <h3>Primer, explica'ns qui ets</h3>
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Nom i cognoms</label>
+      <input type="text" name="nom" required>
+
+      <label>Edat</label>
+      <input type="number" name="edat" min="0">
+
+      <h3>Quin cicle estàs estudiant?</h3>
+      <div class="radio-group">
+        <label><input type="radio" name="cicle" value="ASIX" checked> ASIX</label>
+        <label><input type="radio" name="cicle" value="DAM"> DAM</label>
+        <label><input type="radio" name="cicle" value="DAW"> DAW</label>
+      </div>
+
+      <label>I en quin curs?</label>
+      <select name="curs">
+        <option value="primer">Primer</option>
+        <option value="segon">Segon</option>
+      </select>
+
+      <h3>Marca els temes que vulguis estar sempre al dia!</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" checked> Intel·ligència artificial</label><br>
+        <label><input type="checkbox"> Computació quàntica</label><br>
+        <label><input type="checkbox"> Supercomputadors</label><br>
+        <label><input type="checkbox"> Recerca en algorísmia</label>
+      </div>
+
+      <h3>Hi ha algun tema més t'interessi? Explica'ns-ho!</h3>
+      <textarea placeholder="També m'agradaria saber les últimes novetats sobre..."></textarea>
+
+      <button type="submit">Subscriu-me</button>
+    </form>
+  </div>
+</body>
+</html>
